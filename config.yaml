@@ -26,7 +26,7 @@ monitors:
     name: Plex Server
     url: 'https://plex.ryben.dev/'
     method: GET
-    expectStatus: 200
+    expectStatus: 401
     followRedirect: true
 
   - id: dash-ryben-dev
