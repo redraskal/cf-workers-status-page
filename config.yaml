@@ -63,6 +63,7 @@ monitors:
 
   - id: i-ryben.dev
     name: File Sharing CDN
+    description: i.ryben.dev
     url: 'https://i.ryben.dev/test'
     method: GET
     expectStatus: 404
