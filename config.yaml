@@ -17,6 +17,7 @@ settings:
 monitors:
   - id: cloudflare-com
     name: CDN
+    description: Cloudflare CDN
     url: 'https://www.cloudflare.com/'
     method: GET
     expectStatus: 200
@@ -31,7 +32,24 @@ monitors:
 
   - id: dash-ryben-dev
     name: Plex Dashboard
+    description: Monitoring Plex Server Connections
     url: 'https://dash.ryben.dev/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: health-check-ryben-dev-main
+    name: Plex Storage
+    description: Availability of Main Plex Content
+    url: 'https://health-check.ryben.dev/main'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: health-check-ryben-dev-anime
+    name: Anime Storage
+    description: Availability of Anime Content
+    url: 'https://health-check.ryben.dev/anime'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -44,7 +62,7 @@ monitors:
     followRedirect: true
 
   - id: i-ryben.dev
-    name: File Sharing
+    name: File Sharing CDN
     url: 'https://i.ryben.dev/test'
     method: GET
     expectStatus: 404
