@@ -23,6 +23,14 @@ monitors:
     expectStatus: 200
     followRedirect: true
 
+  - id: health-check-ryben-dev-gateway
+    name: Server Gateway
+    description: Reverse Proxy Service
+    url: 'https://health-check.ryben.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
   - id: plex-ryben-dev
     name: Plex Server
     url: 'https://plex.ryben.dev/web/index.html'
